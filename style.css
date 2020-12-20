@@ -1,0 +1,188 @@
+*{ padding: 0; margin: 0; }
+
+
+body{ height: 3000px; background-color: rgb(250, 242, 242);  }
+
+
+header{ height: 90px; width: 100%; background-image: linear-gradient(to left, rgb(6, 241, 241), blue); position: fixed; top: 0; }
+
+
+
+
+
+#logobox{ width: 27%; height: 100%; float: right; }
+
+#h2-header{ float: left; line-height: 100px; padding: 0 35px;}
+
+#mon-img{ height: 100%; border-radius: 60%; }
+
+nav{ width: 45%; text-align: center; }
+
+nav a{ text-decoration: none; color: rgb(12, 8, 250); font-weight: bold; display: inline-block; }
+
+nav li{  display: inline-block; line-height: 50px; width: 120px; height: 50px;
+    background-color: rgb(6, 206, 241); text-align: center;
+    border-radius: 30px; transform: translate(0%, 40%); margin: 2px; }
+
+nav li:hover{ background-color: rgb(202, 247, 243); opacity: 0.5; }
+
+
+
+main{ width: 100%; height: 710px; background-color: rgb(198, 204, 204); 
+      border-top: 3px solid black; animation-name: color-page;
+      animation-duration: 6s; animation-iteration-count: infinite;
+      clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+      border: 5px solid black; position: relative; top: 92px;}
+
+
+
+aside{ width: 40%; height: 100%; float: left; }
+
+main h1{ font-size: 400%; font-weight: bold; line-height: 100%; margin: 6px 0px; color: blue; }
+main p{ font-family: Montserrat, sans-serif; line-height: 150%; font-size: 16px; font-weight: bold; padding: 5px 0; }
+
+#ingbox{width: 80%; height: 170px; background-color: rgb(113, 255, 255);
+        transform: translate(13%, 80%); 
+        border-bottom: 5px solid black; padding: 20px;
+        border-radius: 30px; }
+
+#s-m{ width: 60%; height: 50px; display: flex; justify-content: center; 
+     transform: translate(40%, 355%); 
+    /* padding: 0 10px;  margin-top: 15px; */
+}
+
+#s-m img{ height: 40px; width: 40px; padding: 0 2px;  border-bottom: 2px solid black; padding-bottom: 4px; }
+
+#s-m img:hover{ transform: scale(1.2); border-bottom: 2px solid rgb(0, 0, 138); }
+
+#article{ width: 58%; height: 100%; float: right; position: relative;}
+#id-photo{ width: 50%; height: 500px; ; position: absolute; top: 10%; left: 20%; border-radius: 20px;}
+
+
+
+#p-about-me{ width: 100%; height: 800px; background-color: rgb(224, 226, 200);
+            text-align: center;  padding: 10px 0; font-family: Montserrat, sans-serif;
+            font-size: calc(12px + 0.4vw);}
+
+
+#p-projects{ width: 100%; height: 800px; background-color: rgb(224, 226, 200);
+                text-align: center;  padding: 10px 0; font-family: Montserrat, sans-serif;
+                font-size: calc(12px + 0.4vw);}
+
+
+
+#p-contact{ width: 100%; height: 800px; background-color: rgb(224, 226, 200);
+                    text-align: center;  padding: 10px 0; font-family: Montserrat, sans-serif;
+                    font-size: calc(12px + 0.4vw);}
+
+
+
+
+
+
+footer{ height: 50px; width: 100%;
+        background-image: linear-gradient(to left, rgb(217, 231, 24), rgb(101, 116, 50));
+        text-align: center; }
+
+footer h3{ line-height: 50px; color: black; }
+
+footer a{ color: black; }
+
+footer a:hover{ color: blue; }
+
+@keyframes color-page{ 0% {background-color: white}
+                       50% {background-color: rgb(199, 199, 199);}
+                       100% {background-color: rgb(179, 179, 179);}
+}
+
+
+
+@media all{  }
+
+@media print{  }
+
+@media only screen and (min-width: 1150px) and (max-width: 1300px) { 
+    
+    #logobox{ width: 30%; }
+  /* nav{ width: 55%;} */
+    main h1{ font-size: 300%;}   
+    #ingbox{width: 80%;}
+     #id-photo{ left: 35%;}
+   /*  #s-m{ transform: translate(50%, 355%);}  */
+ }
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1149px) { 
+    
+    #logobox{ width: 35%; }
+    nav{ width: 55%;}
+    main h1{ font-size: 300%;}
+    #ingbox{width: 90%;}
+    #id-photo{ left: 35%;}
+    #s-m{ transform: translate(50%, 355%);}
+ }
+
+ @media only screen  and (max-width: 999px) 
+ 
+ /* and (min-width: 900px)  */
+ 
+ { 
+    
+    #logobox{ width: 35%; }
+    nav{ width: 65%;}
+    nav li{ transform: translate(-28%, 40%);}
+    main h1{ font-size: 250%;}
+    #ingbox{width: 90%;}
+    #id-photo{ left: 35%;}
+    #s-m{ transform: translate(50%, 360%);}
+ }
+
+
+ @media only screen and (max-width: 899px) 
+ 
+ /* and (min-width: 790px)   */
+ 
+ { 
+    
+    #logobox{ width: 40%; }
+    nav{ width: 60%;}
+    nav li{ width: 90px; height: 40px; transform: translate(-50%, 40%); line-height: 40px;}
+    main h1{ font-size: 250%;}
+    #ingbox{width: 90%;}
+    #id-photo{ left: 35%;}
+    #s-m{ transform: translate(50%, 360%);}
+ }
+
+ @media only screen and (max-width: 500px) { 
+
+    header{ height: 60px; }
+    
+    #logobox{ width: 45%; height: 100%; float: right; }
+
+    #h2-header{ float: left; line-height: 55px; padding: 0 25px; font-size: 115%; transform: translate(10%, 00%); }
+
+    #mon-img{ height: 80%; border-radius: 60%; transform: translate(0%, 10%); }
+
+    nav{ width: 55%; text-align: center; }
+
+    nav a{ text-decoration: none; color: rgb(12, 8, 250); font-weight: bold; display: inline-block; font-size: 75%; }
+
+    nav li{  display: inline-block; line-height: 25px; width: 55px; height: 25px;
+    background-color: rgb(6, 206, 241); text-align: center;
+    border-radius: 30px; transform: translate(-20%, 65%); margin: 2px; }
+
+    nav li:hover{ background-color: rgb(202, 247, 243); opacity: 0.5; }
+
+
+
+    main{ clip-path: polygon(0 4%, 100% 0%, 100% 90%, 0% 100%); top: 60px;}
+
+
+
+
+
+    main h1{ font-size: 180%;}
+    #ingbox{width: 110%;}
+    #id-photo{ left: 45%;}
+    #s-m{ transform: translate(90%, 360%);}
+ }
